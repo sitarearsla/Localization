@@ -2,8 +2,10 @@ package com.sitare.localization
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.core.widget.doOnTextChanged
 import com.sitare.localization.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +18,14 @@ class MainActivity : AppCompatActivity() {
 
        // binding.loginButton.text = "Continue"
         //binding.emailTextInput.setText("sarslanturk16@ku.edu.tr")
+
+        binding.passwordTextInput.doOnTextChanged { text, start, before, count ->
+            binding.passwordTextInputLayout.error = null
+        }
+
+        binding.emailTextInput.doOnTextChanged { text, start, before, count ->
+            binding.emailTextInputLayout.error = null
+        }
 
         binding.loginButton.setOnClickListener {
          validate()
@@ -38,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             return false
         }
 
-        if (email.contains("@").not()){
+        if (Patterns.EMAIL_ADDRESS.matcher(email).matches().not()){
             binding.emailTextInputLayout.error = getString(R.string.invalid_email_warning)
             return false
         }
