@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Localization</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="welcome">Welcome %s\n to the app!</string>
+    <string name="empty_email_warning">Please enter your mail.</string>
+    <string name="empty_password_warning">Please enter your password.</string>
+    <string name="invalid_email_warning">Please enter a valid email.</string>
+</resources>

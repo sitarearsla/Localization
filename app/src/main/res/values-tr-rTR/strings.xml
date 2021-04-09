@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lokalizasyon</string>
+    <string name="e_mail">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş</string>
+    <string name="login_successful">Giriş Başarılı</string>
+    <string name="welcome">Hoşgeldin %s\nTadını çıkart.</string>
+    <string name="empty_email_warning">Lütfen e-postasınızı girin.</string>
+    <string name="empty_password_warning">Lütfen şifrenizi girin.</string>
+    <string name="invalid_email_warning">Lütfen geçerli bir e-posta girin.</string>
+</resources>
